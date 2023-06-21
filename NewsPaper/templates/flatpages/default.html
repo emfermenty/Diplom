@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{% block title %} {% endblock title %}</title>
+
+        {% load static %}
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+   <div class="container">
+       <a class="navbar-brand" href="/news">Портал ООО "ДКИ"</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse"
+               data-target="#navbarResponsive"
+               aria-controls="navbarResponsive" aria-expanded="false"
+               aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                   <a class="nav-link" href="#">Чат
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="/news/">Новости</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="/docs/pdf_list">Документация</a>
+               </li>
+           </ul>
+       </div>
+
+   </div>
+</nav>
+
+    <center><body>
+
+    {% block body %}
+    {% endblock body %}
+    <hr>
+    <h2>Последние добавленные документы</h2>
+<p><a href="docs/accept.pdf" download>Уведомление о включении в Реестр потенциальных участников закупок Группы «Газпром»</a></p>
+<p><a href="media/pdfs/45001-2020.pdf" download>Сертификат ISO 45001:2020</a></p>
+    </body></center>
+<body>
+
+<hr>
+<h5 align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspКонтакты (внутренние номера):</h5>
+<center><table>
+    <tr>
+        <td>Главный директор: 104&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Главный бухгалтер: 105&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Отдел кадров: 106&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Главный инженер: 107&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Контроль качества: 108&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Отдел снабжения: 109&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Системные администраторы: 110&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>Финансовый отдел: 112&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+    </tr>
+</table></center>
+</body>

@@ -1,0 +1,22 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %} Список документов {% endblock title %}
+
+{% block body %}
+
+{% for pdf in pdfs %}
+    <div>
+        <h4>{{ pdf.name }}</h4>
+        <a href="{{ pdf.document.url }}" target="blank">Открыть</a>
+    </div>
+{% endfor %}
+    <div>
+    <li class ="nav-item">
+        <a href = "/docs/pdf_upload/">Загрузить документ</a>
+    </li>
+    </div>
+
+
+{% endblock body %}
